@@ -1,0 +1,116 @@
+/* || IMPORTS || */
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* || CUSTOM STYLES || */
+
+body {
+  font-family: Poppins, sans-serif;
+  color: white;
+}
+
+@keyframes scroll-logo {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-320px);
+  }
+}
+
+.scroll-logo-animate {
+  animation: scroll-logo 10s linear infinite;
+}
+
+@keyframes scroll-logo-reverse {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(400px);
+  }
+}
+
+.scroll-logo-animate-reverse {
+  animation: scroll-logo-reverse 10s linear infinite;
+}
+
+.gap-6rem {
+  gap: 6rem;
+}
+
+.radial-gradient {
+  background-image: radial-gradient(rgb(95, 94, 94), black);
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 6fr;
+}
+
+@keyframes welcome-logo {
+  0% {
+    opacity: 0;
+    scale: 0.5;
+    transform: translateX(96px);
+  }
+
+  40% {
+    opacity: 1;
+    scale: 1;
+    transform: translateX(96px);
+  }
+
+  60% {
+    opacity: 1;
+    scale: 1;
+    transform: translateX(96px);
+  }
+
+  100% {
+    opacity: 1;
+    scale: 1;
+    transform: translateX(0);
+  }
+}
+
+.welcome-logo-anime {
+  transform: translateX(96px);
+  animation: welcome-logo 5s ease-in-out forwards;
+}
+
+@keyframes welcome-title {
+  0% {
+    opacity: 0;
+    transform: translateX(-56px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.welcome-title-anime {
+  animation: welcome-title 2s 3s ease-in-out forwards;
+}
+
+@keyframes welcome-screen {
+  0% {
+    height: 100vh;
+  }
+
+  100% {
+    height: 0;
+  }
+}
+
+.welcome-screen-anime {
+  animation: welcome-screen 1s 6s ease-in-out forwards;
+}

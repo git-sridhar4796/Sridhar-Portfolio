@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sridhar Portfolio</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./main.js" defer></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body class="bg-black">
+    <!-- || WELCOME SCREEN || -->
+
+    <section
+      class="h-screen flex flex-row justify-center items-center gap-4 welcome-screen-anime"
+    >
+      <img
+        src="./img/Sridhar Logo.png"
+        alt="Sridhar Logo"
+        class="h-28 drop-shadow-[0_1px_3px_#64748b] translate-x-24 z-10 welcome-logo-anime welcome-logo-move-anime"
+      />
+      <p
+        class="text-5xl font-semibold text-purple-500 drop-shadow-[0_1px_3px_#64748b] opacity-0 -translate-x-14 welcome-title-anime"
+      >
+        Sridhar S
+      </p>
+    </section>
+
+    <!-- || HEADER || -->
+
+    <header
+      class="p-2 px-4 bg-black sticky top-0 border-b-2 border-gray-800 z-10"
+    >
+      <section class="relative">
+        <section class="flex flex-row items-center justify-between gap-2">
+          <div class="flex flex-row justify-start items-center gap-2">
+            <a href="#">
+              <img
+                src="./img/Sridhar Logo.png"
+                alt="Sridhar Logo"
+                class="h-16 drop-shadow-[0_1px_3px_#64748b]"
+              />
+            </a>
+            <!-- <h1 class="font-bold text-3xl text-nowrap text-purple-500">
+            <a href="#" class="drop-shadow-[0_1px_1px_#64748b]">Sridhar S</a>
+          </h1> -->
+          </div>
+          <div>
+            <button
+              id="hamburgerBtn"
+              class="text-3xl md:hidden hover:text-purple-300 border-gray-600 border-2 rounded p-1 hover:border-purple-300"
+            >
+              &#9776;
+            </button>
+            <nav
+              id="navMenu"
+              class="text-lg text-gray-300 space-x-2 hidden md:block"
+            >
+              <a
+                href="#projects"
+                class="hover:text-purple-400 transform hover:-translate-y-1 transition duration-100 ease-in-out inline-block"
+                >Projects</a
+              >
+              <a
+                href="#tech"
+                class="hover:text-purple-400 transform hover:-translate-y-1 transition duration-100 ease-in-out inline-block"
+                >Tech</a
+              >
+              <a
+                href="#contact"
+                class="hover:text-purple-400 transform hover:-translate-y-1 transition duration-100 ease-in-out inline-block"
+                >Contact</a
+              >
+              <a
+                href="#"
+                download="Sridhar_Resume"
+                class="bg-purple-600 text-gray-200 py-1 px-2 rounded-lg hover:bg-purple-700 transform hover:-translate-y-1 transition duration-100 ease-in-out inline-block"
+                ><i class="fa-solid fa-download"></i> Resume</a
+              >
+            </nav>
+          </div>
+        </section>
+
+        <!-- MOBILE MENU -->
+
+        <section
+          id="mobileMenu"
+          class="text-xl flex flex-col items-end justify-center gap-3 py-2 text-gray-300 transform transition-all duration-300 ease-in-out scale-y-0 opacity-0 origin-top max-h-0 overflow-hidden absolute top-full right-0 w-full px-4 bg-black/50 backdrop-blur z-10"
+        >
+          <a
+            href="#projects"
+            class="hover:text-purple-400 transform hover:scale-105 transition duration-100 ease-in-out inline-block"
+            >Projects</a
+          >
+          <a
+            href="#tech"
+            class="hover:text-purple-400 transform hover:scale-105 transition duration-100 ease-in-out inline-block"
+            >Tech</a
+          >
+          <a
+            href="#contact"
+            class="hover:text-purple-400 transform hover:scale-105 transition duration-100 ease-in-out inline-block"
+            >Contact</a
+          >
+          <a
+            href="#"
+            download="Sridhar_Resume"
+            class="bg-purple-600 py-1 px-2 rounded-lg hover:bg-purple-700 transform hover:scale-105 transition duration-100 ease-in-out inline-block"
+            ><i class="fa-solid fa-download"></i> Resume</a
+          >
+        </section>
+      </section>
+    </header>
+
+    <main>
+      <!-- || HERO SECTION || -->
+
+      <section
+        class="flex flex-col-reverse md:flex-row justify-center items-center p-4 text-gray-300 gap-4"
+      >
+        <!-- || HERO 1 || -->
+
+        <section
+          id="hero1"
+          class="flex flex-col justify-center items-center p-2 md:pr-4 md:border-r-2 md:border-gray-500"
+        >
+          <img
+            src="./img/Sridhar Photo 2.png"
+            alt="Sridhar Photo"
+            width="250px"
+            height="400px"
+            class="border-2 border-gray-800 rounded-xl shadow-sm shadow-gray-600"
+          />
+          <p class="py-3 text-gray-400">
+            <i class="fa-solid fa-location-dot text-red-600"></i> Chennai,
+            India&nbsp;
+            <img
+              src="./img/india-flag-icon-16.png"
+              alt="indian flag emoji"
+              class="inline-block scale-125"
+            />
+          </p>
+          <ul class="flex flex-row gap-2 items-center pb-4">
+            <li class="text-lg underline underline-offset-4 text-gray-300">
+              Socials:
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fa-brands fa-linkedin text-2xl text-blue-300"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-github text-2xl"></i></a>
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fa-brands fa-twitter text-2xl text-blue-400"></i
+              ></a>
+            </li>
+          </ul>
+          <a
+            href="#contact"
+            class="bg-purple-600 py-1 px-2 rounded-lg hover:bg-purple-700 transform hover:scale-105 transition duration-100 ease-in-out inline-block"
+            >Get in Touch <i class="fa-solid fa-handshake"></i
+          ></a>
+        </section>
+
+        <!-- || HERO 2 || -->
+
+        <section
+          id="hero2"
+          class="flex flex-col justify-center items-center md:justify-start md:items-start gap-2 p-2 text-center md:text-start pb-4"
+        >
+          <p class="text-xl italic text-gray-400">Hi,</p>
+          <h2 class="text-7xl text-gray-300">
+            I'm <span class="text-purple-600 font-bold italic">Sridhar</span>
+          </h2>
+          <p class="text-4xl text-gray-500">
+            An <span class="italic">Aspiring</span
+            ><span class="font-semibold text-purple-300">
+              Full Stack Developer</span
+            >
+          </p>
+          <p class="text-xl text-purple-400">
+            Passionate about bringing creative Ideas to Life.
+          </p>
+          <hr class="border-2 border-gray-400 w-4/5 rounded my-1" />
+          <p class="text-lg text-gray-400">
+            <span class="italic text-xl">Currently,</span><br />
+            I'm focused on crafting responsive and user-friendly interfaces with
+            - <br />
+            <span class="text-purple-400">HTML</span>,
+            <span class="text-purple-400">CSS</span>,
+            <span class="text-purple-400">Tailwind</span>, and
+            <span class="text-purple-400">Bootstrap</span>, <br />
+            My journey is all about
+            <span class="text-purple-300 italic">learning and adapting</span>,
+            and
+            <br />
+            I'm excited to showcase what I build next
+            <span class="text-purple-400 font-bold text-xl">!!</span>
+          </p>
+        </section>
+      </section>
+
+      <!-- || PROJECTS || -->
+
+      <section
+        id="projects"
+        class="text-center bg-zinc-900 mt-3 py-6 scroll-mt-24"
+      >
+        <h2 class="text-4xl text-gray-300 font-semibold pb-10">Projects</h2>
+        <section
+          class="flex flex-row gap-5 p-4 justify-center items-center flex-shrink-0 flex-wrap"
+        >
+          <!-- PROJECT CARD 1 -->
+
+          <section
+            id="card1"
+            class="flex flex-col gap-1 border h-96 border-gray-500 rounded-md basis-80 shadow shadow-gray-400 hover:ring hover:ring-purple-400 hover:ring-opacity-50"
+          >
+            <img
+              src="./img/Aethereal Website Image.png"
+              alt="Aethereal Website Image"
+              class="rounded-t-md border-b-2 border-gray-500 w-80 h-[150px] object-fill"
+            />
+            <div class="p-2 text-start">
+              <h3 class="text-xl text-gray-200 underline pb-2">Aethereal</h3>
+              <p class="text-gray-500">Business Landing Page</p>
+              <p class="pb-1 text-sm text-gray-300">
+                A single page responsive landing page for a Drone photography
+                business.
+              </p>
+              <div class="flex flex-row justify-start items-center gap-2 py-4">
+                <p class="text-gray-300">Tech:</p>
+                <img
+                  src="./img/w3_html5-icon.svg"
+                  alt="HTML 5 Logo"
+                  width="30px"
+                  height="auto"
+                />
+                <img
+                  src="./img/w3_css-icon~old.svg"
+                  alt="CSS 3 Logo"
+                  width="30px"
+                  height="auto"
+                />
+                <img
+                  src="./img/w3_bootstrap_logo.svg"
+                  alt="Bootstrap CSS Logo"
+                  width="30px"
+                  height="auto"
+                />
+                <img
+                  src="./img/w3_sass-icon.svg"
+                  alt="Sass Logo"
+                  width="30px"
+                  height="auto"
+                />
+              </div>
+              <div
+                class="flex flex-row justify-around items-center translate-y-2"
+              >
+                <a
+                  href="#"
+                  class="bg-purple-600 py-1 px-2 rounded-lg hover:bg-purple-700 transform hover:scale-105 transition duration-100 ease-in-out inline-block"
+                  >Live Demo <i class="fa-solid fa-laptop text-xl"></i
+                ></a>
+                <a
+                  href="#"
+                  class="border-2 border-purple-600 hover:border-purple-700 rounded-lg px-2 py-1 transform hover:scale-105 transition duration-100 ease-in-out inline-block"
+                  >View Code <i class="fa-brands fa-github text-xl"></i
+                ></a>
+              </div>
+            </div>
+          </section>
+
+          <!-- PROJECT CARD 2 -->
+
+          <section
+            id="card2"
+            class="flex flex-col gap-1 border h-96 border-gray-500 rounded-md basis-80 shadow shadow-gray-400 hover:ring hover:ring-purple-400 hover:ring-opacity-50"
+          >
+            <img
+              src="./img/Acme Rockets Website Image.png"
+              alt="Aethereal Website Image"
+              class="rounded-t-md border-b-2 border-gray-500 w-80 h-[150px] object-fill"
+            />
+            <div class="p-2 text-start">
+              <h3 class="text-xl text-gray-200 underline pb-2">Acme Rockets</h3>
+              <p class="text-gray-500">Business Landing Page</p>
+              <p class="pb-1 text-sm text-gray-300">
+                A single page responsive landing page for a Rocket as a Service
+                (RaaS) company.
+              </p>
+              <div class="flex flex-row justify-start items-center gap-2 py-4">
+                <p class="text-gray-300">Tech:</p>
+                <img
+                  src="./img/w3_html5-icon.svg"
+                  alt="HTML 5 Logo"
+                  width="30px"
+                  height="auto"
+                />
+                <img
+                  src="./img/w3_css-icon~old.svg"
+                  alt="CSS 3 Logo"
+                  width="30px"
+                  height="auto"
+                />
+                <img
+                  src="./img/w3_tailwindcss-icon.svg"
+                  alt="Tailwind CSS Logo"
+                  width="30px"
+                  height="auto"
+                />
+              </div>
+              <div
+                class="flex flex-row justify-around items-center translate-y-2"
+              >
+                <a
+                  href="#"
+                  class="bg-purple-600 py-1 px-2 rounded-lg hover:bg-purple-700 transform hover:scale-105 transition duration-100 ease-in-out inline-block"
+                  >Live Demo <i class="fa-solid fa-laptop text-xl"></i
+                ></a>
+                <a
+                  href="#"
+                  class="border-2 border-purple-600 hover:border-purple-700 rounded-lg px-2 py-1 transform hover:scale-105 transition duration-100 ease-in-out inline-block"
+                  >View Code <i class="fa-brands fa-github text-xl"></i
+                ></a>
+              </div>
+            </div>
+          </section>
+
+          <!-- PROJECT CARD 3 -->
+
+          <section
+            id="card3"
+            class="flex flex-col gap-1 border h-96 border-gray-500 rounded-md basis-80 shadow shadow-gray-400 hover:ring hover:ring-purple-400 hover:ring-opacity-50"
+          >
+            <img
+              src="./img/9504688_26690.jpg"
+              alt="Aethereal Website Image"
+              class="rounded-t-md border-b-2 border-gray-500 w-80 h-[150px] object-fill"
+            />
+            <div class="p-2 text-start">
+              <h3 class="text-xl text-gray-200 underline pb-2">Sridhar S</h3>
+              <p class="text-gray-500">Personal Portfolio Site</p>
+              <p class="pb-1 text-sm text-gray-300">
+                A single page responsive portfolio site for an aspiring
+                developer.
+              </p>
+              <div class="flex flex-row justify-start items-center gap-2 py-4">
+                <p class="text-gray-300">Tech:</p>
+                <img
+                  src="./img/w3_html5-icon.svg"
+                  alt="HTML 5 Logo"
+                  width="30px"
+                  height="auto"
+                />
+                <img
+                  src="./img/w3_css-icon~old.svg"
+                  alt="CSS 3 Logo"
+                  width="30px"
+                  height="auto"
+                />
+                <img
+                  src="./img/w3_tailwindcss-icon.svg"
+                  alt="Tailwind CSS Logo"
+                  width="30px"
+                  height="auto"
+                />
+              </div>
+              <div
+                class="flex flex-row justify-around items-center translate-y-2"
+              >
+                <a
+                  href="#"
+                  class="bg-purple-600 py-1 px-2 rounded-lg hover:bg-purple-700 transform hover:scale-105 transition duration-100 ease-in-out inline-block"
+                  >Live Demo <i class="fa-solid fa-laptop text-xl"></i
+                ></a>
+                <a
+                  href="#"
+                  class="border-2 border-purple-600 hover:border-purple-700 rounded-lg px-2 py-1 transform hover:scale-105 transition duration-100 ease-in-out inline-block"
+                  >View Code <i class="fa-brands fa-github text-xl"></i
+                ></a>
+              </div>
+            </div>
+          </section>
+        </section>
+      </section>
+
+      <!-- || TECH || -->
+
+      <section id="tech" class="text-center mt-3 py-6 scroll-mt-24">
+        <h2 class="text-4xl text-gray-300 font-semibold pb-10">Tech</h2>
+        <section class="m-4 border border-gray-500 rounded-lg flex flex-col">
+          <!-- TECH SECTION - 1  -->
+
+          <section class="flex flex-col md:flex-row border-b-2 border-gray-500">
+            <div
+              class="bg-gray-600 flex flex-row justify-start items-center rounded-t-lg md:rounded-tl-lg md:rounded-tr-none"
+            >
+              <p class="text-2xl p-6 md:w-72">Front-End</p>
+            </div>
+            <div class="radial-gradient overflow-hidden rounded-lg">
+              <div class="overflow-hidden rounded-full w-4/5 mx-auto">
+                <div
+                  class="flex flex-row p-6 justify-center items-center scroll-logo-animate"
+                >
+                  <div
+                    class="flex flex-row gap-2 items-center text-nowrap pr-24"
+                  >
+                    <img
+                      src="./img/w3_html5-icon.svg"
+                      alt="HTML 5 Logo"
+                      width="40px"
+                      height="auto"
+                    />
+                    <p>HTML</p>
+                  </div>
+                  <div
+                    class="flex flex-row gap-2 items-center text-nowrap pr-24"
+                  >
+                    <img
+                      src="./img/w3_css-icon~old.svg"
+                      alt="CSS 3 Logo"
+                      width="40px"
+                      height="auto"
+                    />
+                    <p>CSS</p>
+                  </div>
+                  <div
+                    class="flex flex-row gap-2 items-center text-nowrap pr-24"
+                  >
+                    <img
+                      src="./img/w3_bootstrap_logo.svg"
+                      alt="Bootstrap CSS Logo"
+                      width="40px"
+                      height="auto"
+                    />
+                    <p>Bootstrap CSS</p>
+                  </div>
+                  <div
+                    class="flex flex-row gap-2 items-center text-nowrap pr-24"
+                  >
+                    <img
+                      src="./img/w3_tailwindcss-icon.svg"
+                      alt="Tailwind CSS Logo"
+                      width="40px"
+                      height="auto"
+                    />
+                    <p>Tailwind CSS</p>
+                  </div>
+                  <!-- SECOND LOGOS FOR ANIMATION -->
+                  <div
+                    class="flex flex-row gap-2 items-center text-nowrap pr-24"
+                  >
+                    <img
+                      src="./img/w3_html5-icon.svg"
+                      alt="HTML 5 Logo"
+                      width="40px"
+                      height="auto"
+                    />
+                    <p>HTML</p>
+                  </div>
+                  <div
+                    class="flex flex-row gap-2 items-center text-nowrap pr-24"
+                  >
+                    <img
+                      src="./img/w3_css-icon~old.svg"
+                      alt="CSS 3 Logo"
+                      width="40px"
+                      height="auto"
+                    />
+                    <p>CSS</p>
+                  </div>
+                  <div
+                    class="flex flex-row gap-2 items-center text-nowrap pr-24"
+                  >
+                    <img
+                      src="./img/w3_bootstrap_logo.svg"
+                      alt="Bootstrap CSS Logo"
+                      width="40px"
+                      height="auto"
+                    />
+                    <p>Bootstrap CSS</p>
+                  </div>
+                  <div
+                    class="flex flex-row gap-2 items-center text-nowrap pr-24"
+                  >
+                    <img
+                      src="./img/w3_tailwindcss-icon.svg"
+                      alt="Tailwind CSS Logo"
+                      width="40px"
+                      height="auto"
+                    />
+                    <p>Tailwind CSS</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- TECH SECTION 2 -->
+
+          <section class="flex flex-col md:flex-row">
+            <div
+              class="bg-gray-600 flex flex-row justify-start items-center md:rounded-bl-lg"
+            >
+              <p class="text-2xl p-6 md:w-72">To Learn</p>
+            </div>
+            <div class="radial-gradient overflow-hidden rounded-lg">
+              <div class="overflow-hidden rounded-full w-4/5 mx-auto">
+                <div
+                  class="flex flex-row p-6 justify-center items-center scroll-logo-animate-reverse"
+                >
+                  <div
+                    class="flex flex-row gap-2 items-center text-nowrap pr-24"
+                  >
+                    <img
+                      src="./img/javascript-icon.svg"
+                      alt="JavaScript Logo"
+                      width="40px"
+                      height="auto"
+                    />
+                    <p>JavaScript</p>
+                  </div>
+                  <div
+                    class="flex flex-row gap-2 items-center text-nowrap pr-24"
+                  >
+                    <img
+                      src="./img/typescriptlang-icon.svg"
+                      alt="TypeScript Logo"
+                      width="40px"
+                      height="auto"
+                    />
+                    <p>TypeScript</p>
+                  </div>
+                  <div
+                    class="flex flex-row gap-2 items-center text-nowrap pr-24"
+                  >
+                    <img
+                      src="./img/python-icon.svg"
+                      alt="Python CSS Logo"
+                      width="40px"
+                      height="auto"
+                    />
+                    <p>Python</p>
+                  </div>
+                  <div
+                    class="flex flex-row gap-2 items-center text-nowrap pr-24"
+                  >
+                    <img
+                      src="./img/djangoproject-icon.svg"
+                      alt="Django Logo"
+                      width="40px"
+                      height="auto"
+                    />
+                    <p>Django</p>
+                  </div>
+                  <div
+                    class="flex flex-row gap-2 items-center text-nowrap pr-24"
+                  >
+                    <img
+                      src="./img/sqlite-icon.svg"
+                      alt="SQLite Logo"
+                      width="40px"
+                      height="auto"
+                    />
+                    <p>SQLite</p>
+                  </div>
+                  <div
+                    class="flex flex-row gap-2 items-center text-nowrap pr-24"
+                  >
+                    <img
+                      src="./img/mongodb-icon.svg"
+                      alt="MongoDB Logo"
+                      width="40px"
+                      height="auto"
+                    />
+                    <p>MongoDB</p>
+                  </div>
+                  <div
+                    class="flex flex-row gap-2 items-center text-nowrap pr-24"
+                  >
+                    <img
+                      src="./img/docker-icon.svg"
+                      alt="Docker Logo"
+                      width="40px"
+                      height="auto"
+                    />
+                    <p>Docker</p>
+                  </div>
+                  <div
+                    class="flex flex-row gap-2 items-center text-nowrap pr-24"
+                  >
+                    <img
+                      src="./img/kubernetes-icon.svg"
+                      alt="Kubernetes Logo"
+                      width="40px"
+                      height="auto"
+                    />
+                    <p>Kubernetes</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </section>
+      </section>
+
+      <!-- || CONTACT || -->
+
+      <section
+        id="contact"
+        class="text-center bg-zinc-900 mt-3 py-6 scroll-mt-24"
+      >
+        <h2 class="text-4xl text-gray-300 font-semibold pb-10">Contact</h2>
+        <section class="flex flex-row justify-center">
+          <fieldset
+            class="m-4 border border-gray-500 rounded-lg p-4 w-screen md:w-3/5"
+          >
+            <figcaption class="text-2xl font-semibold text-purple-500 mb-6">
+              Get In Touch
+            </figcaption>
+            <form class="flex flex-col gap-5">
+              <div class="flex flex-col gap-2 text-start">
+                <label for="name" class="text-lg">Name:</label>
+                <input
+                  type="text"
+                  name="Name"
+                  id="name"
+                  required
+                  placeholder="Your Name Here"
+                  autocomplete="off"
+                  class="bg-transparent border border-gray-400 rounded p-1 w-full focus:outline-none focus:border-purple-500 focus:ring focus:ring-purple-500 focus:ring-opacity-50"
+                />
+              </div>
+              <div class="flex flex-col gap-2 text-start">
+                <label for="email" class="text-lg">Email:</label>
+                <input
+                  type="email"
+                  name="Email"
+                  id="email"
+                  required
+                  placeholder="Your Email Here"
+                  autocomplete="off"
+                  class="bg-transparent border border-gray-400 rounded p-1 w-full focus:outline-none focus:border-purple-500 focus:ring focus:ring-purple-500 focus:ring-opacity-50"
+                />
+              </div>
+              <div class="flex flex-col gap-2 text-start">
+                <label for="reason" class="text-lg">Reason to Contact:</label>
+                <select
+                  name="reason"
+                  id="reason"
+                  class="bg-transparent border border-gray-400 rounded p-1 w-full focus:outline-none focus:border-purple-500 focus:ring focus:ring-purple-500 focus:ring-opacity-50"
+                >
+                  <option value="projectInquiry" class="text-gray-500">
+                    Project Inquiry
+                  </option>
+                  <option value="jobInquiry" class="text-gray-500">
+                    Job Inquiry
+                  </option>
+                  <option value="collaboration" class="text-gray-500">
+                    Collaboration
+                  </option>
+                  <option value="generalInquiry" class="text-gray-500">
+                    General Inquiry
+                  </option>
+                </select>
+              </div>
+              <div class="flex flex-col gap-2 text-start">
+                <label for="message" class="text-lg">Your Message:</label>
+                <textarea
+                  name="message"
+                  id="message"
+                  placeholder="Your Message Here"
+                  rows="5"
+                  class="bg-transparent border border-gray-400 rounded p-1 w-full focus:outline-none focus:border-purple-500 focus:ring focus:ring-purple-500 focus:ring-opacity-50"
+                ></textarea>
+              </div>
+              <button
+                type="submit"
+                id="submit"
+                formaction="https://httpbin.org/post"
+                formmethod="post"
+                autocomplete="off"
+                class="text-center bg-purple-600 py-1 px-3 rounded-lg hover:bg-purple-700 transform hover:scale-105 transition duration-100 ease-in-out inline-block w-32"
+              >
+                Send <i class="fa-regular fa-paper-plane"></i>
+              </button>
+            </form>
+          </fieldset>
+        </section>
+      </section>
+    </main>
+
+    <!-- || FOOTER || -->
+
+    <footer class="flex flex-row justify-between">
+      <div></div>
+      <div class="flex flex-col items-center">
+        <p>
+          Made with ❤️ by
+          <span class="font-semibold text-purple-400">Sridhar</span>
+        </p>
+        <p>&copy; 2025 Sridhar S. All Rights Reserved</p>
+      </div>
+      <a href="#" class="scroll-mt-24 self-center pe-6"
+        ><i
+          class="fa-solid fa-arrow-up text-2xl border-2 border-purple-500 text-purple-500 rounded-full"
+        ></i
+      ></a>
+    </footer>
+  </body>
+</html>
